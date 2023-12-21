@@ -24,8 +24,8 @@ COPY ./app /app
 WORKDIR /app
 
 # Expose ports for VNC and any other application ports
-EXPOSE 5900  # VNC port
+EXPOSE 80  # VNC port
 
 # Start VNC Server and your Python GUI application
 CMD ["vncserver", "-geometry", "1280x1024", ":0", "-depth", "24"]
-CMD ["python", "your_gui_app.py"]  # Replace with your application's main file
+CMD ["python", "new.py"]  # Replace with your application's main file
